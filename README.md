@@ -1,3 +1,7 @@
+### BestShop
+
+This is landing page of company which offers services managment of online shops and deliver software to this.
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
