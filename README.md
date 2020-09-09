@@ -1,4 +1,4 @@
-### BestShop
+## BestShop
 
 This is landing page of company which offers services managment of online shops and deliver software to this.
 
