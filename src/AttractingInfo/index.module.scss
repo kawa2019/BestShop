@@ -1,0 +1,15 @@
+@import "../general-scss/variables/color";
+
+.wrapper {
+    background-color: $color-light-grey;
+    padding: 105px 0;
+    position: relative;
+    height: 1395px;
+    .wrapperContainer {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-content: center;
+    }
+}

@@ -1,0 +1,43 @@
+@import "../general-scss/variables/color";
+@import "../general-scss/variables/fonts";
+
+.navigation {
+    height: 70px;
+    box-shadow: 0px 3px 6px #00000029;
+    .contentWrapper {
+        height: 70px;
+        display: flex;
+        justify-content: space-between;
+        .logo {
+            font-size: 32px;
+            line-height: 37px;
+            font-weight: 300;
+            color: $color-primary;
+            font-family: $font-raleway;
+            padding: 16px 0;
+        }
+        .menu {
+            display: flex;
+            justify-content: space-between;
+            width: 599px;
+            li {
+                font-size: 11px;
+                line-height: 15px;
+                font-family: $font-open-sans;
+                color: $color-grey;
+                font-weight: bold;
+                letter-spacing: 3.28px;
+                cursor: pointer;
+                padding: 28px 12px;
+                &:first-child {
+                    color: $color-black;
+                    border-bottom: 4px solid $color-primary;
+                }
+                &:hover {
+                    color: $color-black;
+                    border-bottom: 4px solid $color-primary;
+                }
+            }
+        }
+    }
+}

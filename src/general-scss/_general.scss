@@ -1,0 +1,16 @@
+* {
+    box-sizing: border-box;
+}
+.container {
+    width: 1352px;
+    margin: 0 auto;
+}
+
+.btn {
+    background-color: #07ace6;
+    box-shadow: 5px 10px 14px $color-primary-shadow;
+    color: $color-white;
+    font-weight: bold;
+    font-family: $font-open-sans;
+    text-decoration: none;
+}

@@ -1,0 +1,20 @@
+@import "../general-scss/variables/color";
+@import "../general-scss/variables/fonts";
+@import "../general-scss/variables/mixin";
+
+.wrapper {
+    height: 531px;
+    box-shadow: 0px -5px 80px #00000029;
+    position: relative;
+    background-color: $color-white;
+    h2 {
+        @include headingSmall;
+        padding: 100px 0 100px 0;
+    }
+    .wrapperData {
+        display: flex;
+        width: 823px;
+        justify-content: space-between;
+        margin: 0 auto;   
+    }
+}

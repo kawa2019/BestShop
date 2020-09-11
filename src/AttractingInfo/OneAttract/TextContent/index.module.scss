@@ -1,0 +1,54 @@
+@import "../../../general-scss/variables/mixin";
+@import "../../../general-scss/variables/fonts";
+@import "../../../general-scss/variables/color";
+.wrapper {
+    position: relative;
+    h2 {
+        @include headingSmall;
+        text-align: left;
+    }
+    p {
+        font-family: $font-open-sans;
+        font-size: 16px;
+        line-height: 22px;
+        color: $color-black;
+        margin: 30px 0 50px 0;
+    }
+    &::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 328px;
+        height: 4px;
+    }
+}
+.mcBook {
+    width: 416px;
+    height: 188px;
+    margin-right: 169px;
+    &::after {
+        background-color: $color-redish;
+    }
+}
+.phone {
+    width: 416px;
+    height: 230px;
+    margin-left: 298px;
+    &::after {
+        background-color: $color-primary;
+    }
+}
+.spread {
+    height: 370px;
+    width: 623px;
+    padding: 70px 35px;
+    margin-right: 60px;
+    padding-left: 35px;
+    background-color: $color-white;
+    &::after {
+        background-color: $color-green;
+        left: 35px;
+        bottom: 70px;
+    }
+}

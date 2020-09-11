@@ -1,0 +1,66 @@
+@import "../../general-scss/variables/mixin";
+@import "../../general-scss/variables/fonts";
+@import "../../general-scss/variables/color";
+
+@mixin starterImg {
+    position: relative;
+    & img {
+        position: absolute;
+    }
+}
+.container {
+    margin: 0 auto;
+    width: 1124px;
+    height: 370px;
+    background-color: $color-white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &:nth-child(3){
+       background-color: $color-light-grey;
+    }
+    &:nth-child(even) {
+        flex-direction: row-reverse;
+    }
+    .mcBook {
+        @include starterImg();
+        width: 433px;
+        height: 294px;
+        &::after {
+            content: "";
+            position: absolute;
+            width: 180px;
+            height: 180px;
+            transform: rotate(45deg);
+            border-radius: 41px;
+            background-color: $color-redish;
+            top: 30px;
+            right: 30px;
+        }
+        img {
+            bottom: 0;
+            left: 0;
+            z-index: 2;
+        }
+    }
+    .phone {
+        @include starterImg();
+        background-color: $color-primary;
+        width: 320px;
+        height: 320px;
+        border-radius: 50%;
+        img {
+            top: 17px;
+        }
+    }
+    .spread {
+        @include starterImg();
+        background-color: $color-green;
+        width: 440px;
+        height: 370px;
+        img{
+            bottom: 65px;
+            left: 63px;
+        }
+    }
+}

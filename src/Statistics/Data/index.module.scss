@@ -1,0 +1,61 @@
+@import "../../general-scss/variables/color";
+@import "../../general-scss/variables/fonts";
+
+.single {
+    max-width: 176px;
+    max-height: 167px;
+    .imgWithBack {
+        width: 63px;
+        height: 63px;
+        border-radius: 50%;
+        margin: 0 auto;
+        position: relative;
+        img {
+            position: absolute;
+        }
+    }
+    .num {
+        display: inline-block;
+        margin: 14px 0 15px 0;
+        font-weight: 800;
+        font-size: 20px;
+        line-height: 24px;
+        font-family: $font-raleway;
+        letter-spacing: 5.96px;
+        color: $color-black;
+    }
+    .what {
+        text-align: center;
+        font-family: $font-raleway;
+        font-size: 16px;
+        line-height: 19px;
+        color: $color-grey;
+    }
+    &:nth-child(1) {
+        .imgWithBack {
+            background-color: $color-redish;
+            img {
+                left: 32px;
+                top: 3px;
+            }
+        }
+    }
+    &:nth-child(2) {
+        .imgWithBack {
+            background-color: $color-primary;
+            img {
+                left: 18px;
+                top: 14px;
+            }
+        }
+    }
+    &:nth-child(3) {
+        .imgWithBack {
+            background-color: $color-green;
+            img {
+                left: 31px;
+                top: 6px;
+            }
+        }
+    }
+}
