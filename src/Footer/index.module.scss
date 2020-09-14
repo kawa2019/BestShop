@@ -1,0 +1,40 @@
+@import "../general-scss/variables/color";
+@import "../general-scss/variables/fonts";
+.wrapper {
+    background-color: $color-light-grey;
+    height: 89px;
+    box-shadow: 0px -5px 40px #00000029;
+    margin-top: 59px;
+    .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 100%;
+        .copyright {
+            height: 52px;
+            div {
+                font-family: $font-raleway;
+                font-weight: 300;
+                font-size: 26px;
+                line-height: 30px;
+                color: $color-primary;
+                margin-bottom: 5px;
+            }
+            p {
+                font-family: $font-open-sans;
+                font-size: 11px;
+                line-height: 15px;
+                color: $color-grey;
+            }
+        }
+        .socials {
+            img {
+                height: 24px;
+                width: 24px;
+                &:nth-child(1) {
+                    margin-right: 20px;
+                }
+            }
+        }
+    }
+}

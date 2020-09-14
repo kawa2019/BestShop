@@ -5,6 +5,7 @@ import Statistics from './Statistics/index';
 import AttractInfo from './AttractingInfo/index';
 import Pricing from './Pricing/index';
 import Contact from './Contact';
+import Footer from './Footer';
 
 export const App = () => {
   return (
@@ -15,6 +16,7 @@ export const App = () => {
       <AttractInfo />
       <Pricing />
       <Contact />
+      <Footer />
     </div>
   );
 }
