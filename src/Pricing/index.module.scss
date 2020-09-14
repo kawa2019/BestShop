@@ -1,0 +1,19 @@
+@import "../general-scss/variables/mixin";
+@import "../general-scss/variables/fonts";
+@import "../general-scss/variables/color";
+.wrapper {
+    height: 716px;
+    border: 1px solid transparent;
+    .container {
+        width: 1266px;
+        h2 {
+            margin: 100px 0 50px 0;
+            @include headingSmall;
+        }
+        .versionsContainer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+    }
+}

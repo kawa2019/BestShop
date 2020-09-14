@@ -16,8 +16,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    &:nth-child(3){
-       background-color: $color-light-grey;
+    &:nth-child(3) {
+        background-color: $color-light-grey;
     }
     &:nth-child(even) {
         flex-direction: row-reverse;
@@ -58,7 +58,7 @@
         background-color: $color-green;
         width: 440px;
         height: 370px;
-        img{
+        img {
             bottom: 65px;
             left: 63px;
         }

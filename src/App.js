@@ -3,6 +3,7 @@ import Nav from './Nav/index';
 import Opening from './Opening/index';
 import Statistics from './Statistics/index';
 import AttractInfo from './AttractingInfo/index';
+import Pricing from './Pricing/index';
 
 export const App = () => {
   return (
@@ -11,6 +12,7 @@ export const App = () => {
       <Opening />
       <Statistics />
       <AttractInfo />
+      <Pricing />
     </div>
   );
 }

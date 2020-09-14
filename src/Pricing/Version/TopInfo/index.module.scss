@@ -1,0 +1,51 @@
+@import "../../../general-scss/variables/fonts";
+@import "../../../general-scss/variables/color";
+.wrapper {
+    color: "red";
+    div {
+        text-align: center;
+        &:nth-child(1),
+        &:nth-child(3) {
+            font-family: $font-raleway;
+            font-weight: bold;
+            color: #13253b;
+        }
+        &:nth-child(1) {
+            font-size: 20px;
+            line-height: 24px;
+            margin: 34px 0 14px 0;
+        }
+        &:nth-child(2) {
+            font-family: $font-open-sans;
+            font-weight: 300;
+            font-size: 46px;
+            line-height: 70px;
+        }
+        &:nth-child(3) {
+            font-size: 12px;
+            line-height: 14px;
+            margin-top: 5px;
+        }
+    }
+}
+.basic {
+    div {
+        &:nth-child(2) {
+            color: $color-redish;
+        }
+    }
+}
+.professional {
+    div {
+        &:nth-child(2) {
+            color: $color-primary;
+        }
+    }
+}
+.premium {
+    div {
+        &:nth-child(2) {
+            color: $color-green;
+        }
+    }
+}

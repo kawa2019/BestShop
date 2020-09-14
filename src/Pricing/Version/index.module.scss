@@ -1,0 +1,50 @@
+@import "../../general-scss/variables/color";
+@import "../../general-scss/variables/fonts";
+.wrapper {
+    display: inline-block;
+    border-radius: 18px;
+    position: relative;
+    button {
+        position: absolute;
+        width: 150px;
+        height: 50px;
+        border-radius: 23px;
+        font-family: $font-open-sans;
+        font-weight: bold;
+        font-size: 13px;
+        line-height: 41px;
+        color: $color-white;
+        border: none;
+        left: 50%;
+        margin-left: -75px;
+        bottom: -25px;
+    }
+    &:nth-child(1),
+    &:nth-child(3) {
+        height: 461px;
+        width: 372px;
+    }
+    &:nth-child(1) {
+        border: 1px solid $color-redish;
+        button {
+            background-color: $color-redish;
+        }
+    }
+    &:nth-child(2) {
+        border: 1px solid $color-primary;
+        box-shadow: 5px 10px 27px $color-primary-shadow;
+        width: 405px;
+        height: 500px;
+        button {
+            background-color: $color-primary;
+            width: 165px;
+            margin-left: -82.5px;
+        }
+    }
+    &:nth-child(3) {
+        border: 1px solid $color-green;
+        button {
+            background-color: $color-green;
+        }
+    }
+}
