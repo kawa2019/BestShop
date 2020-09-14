@@ -1,0 +1,85 @@
+@import "../../general-scss/variables/fonts";
+@import "../../general-scss/variables/color";
+.wrapper {
+    width: 440px;
+    height: 372px;
+    margin-top: 4px;
+    position: relative;
+    label {
+        display: inline-block;
+    }
+    .labelPersonal {
+        font-size: 11px;
+        line-height: 15px;
+        font-family: $font-open-sans;
+        letter-spacing: 3.28px;
+        color: $color-primary;
+        font-weight: bold;
+    }
+    .inputPersonal {
+        display: block;
+        width: 100%;
+        height: 43px;
+        border: none;
+        border-bottom: 1px solid $color-grey;
+        outline: none;
+        &:nth-child(2) {
+            margin-bottom: 42px;
+        }
+    }
+    .labelGdpr {
+        margin-top: 30px;
+        font-size: 12px;
+        line-height: 17px;
+        font-family: $font-open-sans;
+        margin-top: 20px;
+        color: #707070;
+        padding-left: 34px;
+        height: 108px;
+        position: relative;
+        &::before {
+            content: "";
+            position: absolute;
+            width: 24px;
+            height: 24px;
+            border-radius: 4px;
+            border: 1px solid #95989a;
+            left: 0;
+            top: 4px;
+        }
+        &::after {
+            position: absolute;
+            width: 12px;
+            height: 11px;
+            background-image: url("../../assets/images/Checkmark.svg");
+            left: 6px;
+            top: 12px;
+        }
+    }
+    #gdpr {
+        position: absolute;
+        left: -99999px;
+    }
+    #gdpr + label::after {
+        content: none;
+    }
+    #gdpr:checked + label::after {
+        content: "";
+    }
+    input[type="submit"] {
+        width: 226px;
+        height: 57px;
+        background-color: $color-primary;
+        box-shadow: 5px 10px 14px $color-primary-shadow;
+        border: none;
+        border-radius: 35px;
+        color: $color-white;
+        font-weight: bold;
+        font-size: 13px;
+        line-height: 18px;
+        font-family: $font-open-sans;
+        position: absolute;
+        right: 0;
+        bottom: 0;
+    }
+}
