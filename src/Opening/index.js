@@ -8,9 +8,9 @@ export default () => {
             <div className={styles.content}>
                 <h1>Sell More!</h1>
                 <p>Open shop on our platform and increase your sales</p>
-                <a href="#" className="btn">Open your shop</a>
+                <a href="#" className="btn" >Open your shop</a>
             </div>
-            <img src={opening} />
+            <img src={opening} alt={""}/>
         </section>
     )
 }

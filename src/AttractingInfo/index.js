@@ -20,9 +20,9 @@ export default () => {
     return (
         <section id="benefits" className={styles.wrapper} >
             <div className={`${styles.wrapperContainer} container`}>
-                {attractInfoArr.map(oneAttract => {
+                {attractInfoArr.map((oneAttract, index) => {
                     return (
-                        <OneAttract heading={oneAttract.heading}
+                        <OneAttract key={index} heading={oneAttract.heading}
                             text={oneAttract.text} img={oneAttract.img} modifyClassText={oneAttract.modifyClassText} modifyClassImg={oneAttract.modifyClassImg} />
                     )
                 })}

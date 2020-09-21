@@ -13,9 +13,9 @@ export default () => {
     const handleMenuIcon=()=>{
         if (isMobileDevice){
         if (!isMenuOpen) {
-            return <img src={bars} className={styles.bars} onClick={()=>setIsMenuOpen(!isMenuOpen)}/>
+            return <img src={bars} className={styles.bars} onClick={()=>setIsMenuOpen(!isMenuOpen)} alt={""}/>
         } else {
-            return <img src={close} className={styles.close} onClick={()=>setIsMenuOpen(!isMenuOpen)}/>
+            return <img src={close} className={styles.close} onClick={()=>setIsMenuOpen(!isMenuOpen)} alt={""}/>
         }
     }}
     return (
