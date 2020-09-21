@@ -1,6 +1,12 @@
 ## BestShop
 
-This is landing page of company which offers services managment of online shops and deliver software to this.
+This is landing page of company which offers services managment of online shops and deliver software to this. My first project when I use local styles by CSS Modules.
+Technologies:
+- Scss
+- Js
+- React
+- Css modules
+- RWD
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
