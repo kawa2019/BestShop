@@ -3,6 +3,12 @@
 .navigation {
     height: 70px;
     box-shadow: 0 3px 6px #00000029;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 3;
+    background-color: $color-white;
     .contentWrapper {
         height: 70px;
         display: flex;
@@ -46,10 +52,9 @@
     }
 }
 
-@media (max-width: 376px) {
+@media (max-width: 550px) {
     .bars, .close {
         filter: invert(57%) sepia(44%) saturate(4525%) hue-rotate(163deg) brightness(96%) contrast(94%);
-
     }
     .close {
         width: 18px;
@@ -59,7 +64,6 @@
     }
     .navigation {
         position: relative;
-
         .contentWrapper {
             .mobileMenu {
                 position: absolute;
@@ -82,5 +86,25 @@
                 }
             }
         }
+    }
+}
+
+@media (min-width: 550px) and (max-width: 750px){
+    .navigation{
+        .contentWrapper{
+            .menu{
+                width: 370px;
+            }
+        }
+    }
+}
+@media (min-width: 750px) and (max-width: 1100px) {
+    .navigation{
+        .contentWrapper{
+            .menu{
+                width: 500px;
+            }
+        }
+
     }
 }

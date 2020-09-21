@@ -46,14 +46,9 @@
         }
     }
 }
-@media (max-width: 376px){
+@media (max-width: 750px){
     .wrapper{
-        h2{
-            font-size: 40px;
-            line-height: 47px;
-            text-align: left;
             margin-bottom: 5px;
-        }
         ul{
             li{
                 display: block;
@@ -61,6 +56,16 @@
                     margin-bottom: 17px;
                 }
             }
+        }
+    }
+}
+
+@media (max-width: 1100px) {
+    .wrapper {
+        h2 {
+            font-size: 40px;
+            line-height: 47px;
+            text-align: left;
         }
     }
 }

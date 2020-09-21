@@ -8,7 +8,7 @@ import close from '../assets/images/times-solid.svg';
 export default () => {
     const [isMenuOpen, setIsMenuOpen]=useState(false)
     const isMobileDevice = useMediaQuery({
-        query: '(max-width: 376px)'
+        query: '(max-width: 550px)'
     })
     const handleMenuIcon=()=>{
         if (isMobileDevice){
