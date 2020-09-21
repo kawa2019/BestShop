@@ -8,7 +8,7 @@ export default () => {
     { version: "Premium", price: "$60", addInfo: "Limited offer", sizeDisk: "2 GB", subDomain: 5, numEmails: 20, yearsLicense: "Two", modifyClass: "premium" }
     ]
     return (
-        <section className={styles.wrapper}>
+        <section id={"pricing"} className={styles.wrapper}>
             <div className={`${styles.container} container`}>
                 <h2>Pricing</h2>
                 <div className={styles.versionsContainer}>

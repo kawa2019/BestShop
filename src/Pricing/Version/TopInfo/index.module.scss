@@ -1,7 +1,6 @@
 @import "../../../general-scss/variables/fonts";
 @import "../../../general-scss/variables/color";
 .wrapper {
-    color: "red";
     div {
         text-align: center;
         &:nth-child(1),
@@ -47,5 +46,24 @@
         &:nth-child(2) {
             color: $color-green;
         }
+    }
+}
+
+@media (max-width: 376px) {
+    .wrapper {
+    div{
+        &:nth-child(1){
+            margin: unset;
+        }
+    }
+    }
+    .basic {
+        margin: 0 45px;
+        }
+    .professional{
+        margin: 0 23px 0 28px;
+    }
+    .premium{
+        margin: 0 25px 0 31px;
     }
 }

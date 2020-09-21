@@ -1,7 +1,6 @@
 @import "../../general-scss/variables/color";
 @import "../../general-scss/variables/fonts";
 .wrapper {
-    display: inline-block;
     border-radius: 18px;
     position: relative;
     button {
@@ -46,5 +45,21 @@
         button {
             background-color: $color-green;
         }
+    }
+}
+@media (max-width: 376px){
+    .wrapper{
+        display: flex;
+        align-items: center;
+        &:nth-child(1),
+        &:nth-child(3) {
+            width: 293px;
+            height: 251px;
+        }
+        &:nth-child(2) {
+            width: 339px;
+            height: 277px;
+        }
+
     }
 }

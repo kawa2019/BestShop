@@ -18,7 +18,7 @@ export default () => {
         img: require('../assets/images/Trumpet.webp'), modifyClassText: stylesText.spread, modifyClassImg: stylesImg.spread
     }]
     return (
-        <section className={styles.wrapper} >
+        <section id="benefits" className={styles.wrapper} >
             <div className={`${styles.wrapperContainer} container`}>
                 {attractInfoArr.map(oneAttract => {
                     return (

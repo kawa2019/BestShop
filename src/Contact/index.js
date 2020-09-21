@@ -5,7 +5,7 @@ import styles from './index.module.scss';
 
 export default () => {
     return (
-        <section className={styles.wrapper}>
+        <section id={"contact"} className={styles.wrapper}>
             <div className={`container ${styles.containerWrapper}`}>
                 <FromUs />
                 <YourContact />

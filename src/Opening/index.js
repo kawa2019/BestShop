@@ -4,7 +4,7 @@ import styles from './index.module.scss'
 
 export default () => {
     return (
-        <section className={styles.opening}>
+        <section id={"opening"} className={styles.opening}>
             <div className={styles.content}>
                 <h1>Sell More!</h1>
                 <p>Open shop on our platform and increase your sales</p>

@@ -17,3 +17,21 @@
         }
     }
 }
+@media (max-width: 376px){
+    .wrapper{
+        height: 967px;
+        margin-top: 53px;
+        margin-bottom: 53px;
+        .container{
+            width: 339px;
+            h2{
+                margin-top: 0;
+                margin-bottom: 14px;
+            }
+            .versionsContainer{
+                flex-direction: column;
+                height: 887px;
+            }
+        }
+    }
+}

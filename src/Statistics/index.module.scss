@@ -15,6 +15,23 @@
         display: flex;
         width: 823px;
         justify-content: space-between;
-        margin: 0 auto;   
+    }
+}
+
+@media (max-width: 376px) {
+    .wrapper {
+        height: 762px;
+        h2 {
+            font-size: 30px;
+            line-height: 35px;
+            padding: 100px 20px 25px 20px;
+        }
+        .wrapperData {
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            margin-bottom: 25px;
+        }
     }
 }

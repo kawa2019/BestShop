@@ -46,3 +46,21 @@
         }
     }
 }
+@media (max-width: 376px){
+    .wrapper{
+        h2{
+            font-size: 40px;
+            line-height: 47px;
+            text-align: left;
+            margin-bottom: 5px;
+        }
+        ul{
+            li{
+                display: block;
+                &:nth-child(1){
+                    margin-bottom: 17px;
+                }
+            }
+        }
+    }
+}

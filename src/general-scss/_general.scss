@@ -6,6 +6,12 @@
     margin: 0 auto;
 }
 
+@media (max-width: 376px) {
+    .container {
+        width: 327px;
+    }
+}
+
 .btn {
     background-color: #07ace6;
     box-shadow: 5px 10px 14px $color-primary-shadow;

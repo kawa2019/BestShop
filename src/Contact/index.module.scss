@@ -7,3 +7,13 @@
         justify-content: space-between;
     }
 }
+@media (max-width: 376px) {
+    .wrapper {
+        margin-top: 0;
+        .containerWrapper{
+            width: 316px;
+            height: 651px;
+            flex-direction: column;
+        }
+    }
+}

@@ -13,3 +13,8 @@
         align-content: center;
     }
 }
+@media (max-width: 376px) {
+    .wrapper {
+        padding: unset;
+    }
+}
