@@ -1,15 +1,17 @@
 @mixin headingStyle {
-    font-family: $font-raleway;
-    color: $color-black;    
-    text-align: center;
+  font-family: $font-raleway;
+  color: $color-black;
+  text-align: center;
 }
+
 @mixin headingSmall {
-    @include headingStyle;
-    font-size: 36px;
-    line-height: 42px;
+  @include headingStyle;
+  font-size: 36px;
+  line-height: 42px;
 }
+
 @mixin headingBig {
-    @include headingStyle;
-    font-size: 49px;
-    line-height: 57px;
+  @include headingStyle;
+  font-size: 49px;
+  line-height: 57px;
 }

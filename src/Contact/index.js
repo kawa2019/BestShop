@@ -7,8 +7,8 @@ export default () => {
     return (
         <section id={"contact"} className={styles.wrapper}>
             <div className={`container ${styles.containerWrapper}`}>
-                <FromUs />
-                <YourContact />
+                <FromUs/>
+                <YourContact/>
             </div>
         </section>
     )

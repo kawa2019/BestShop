@@ -1,4 +1,4 @@
-import React, { useContext } from 'react';
+import React, {useContext} from 'react';
 import VersionContext from '../../VersionContext';
 import styles from './index.module.scss';
 

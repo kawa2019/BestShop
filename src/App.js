@@ -8,15 +8,15 @@ import Contact from './Contact';
 import Footer from './Footer';
 
 export const App = () => {
-  return (
-    <div className="App">
-      <Nav />
-      <Opening />
-      <Statistics />
-      <AttractInfo />
-      <Pricing />
-      <Contact />
-      <Footer />
-    </div>
-  );
+    return (
+        <div className="App">
+            <Nav/>
+            <Opening/>
+            <Statistics/>
+            <AttractInfo/>
+            <Pricing/>
+            <Contact/>
+            <Footer/>
+        </div>
+    );
 }

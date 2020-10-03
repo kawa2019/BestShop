@@ -11,9 +11,9 @@ export default () => {
             <div className="container">
                 <h2>The most popular sales platform in country</h2>
                 <div className={styles.wrapperData}>
-                    <Data img={person} num={"10000+"} what={"daily entries"} />
-                    <Data img={eye} num={"2000000+"} what={<>seen products<br />every day</>} />
-                    <Data img={catalog} num={"10000+"} what={<>added posts<br />daily</>} />
+                    <Data img={person} num={"10000+"} what={"daily entries"}/>
+                    <Data img={eye} num={"2000000+"} what={<>seen products<br/>every day</>}/>
+                    <Data img={catalog} num={"10000+"} what={<>added posts<br/>daily</>}/>
                 </div>
             </div>
         </section>

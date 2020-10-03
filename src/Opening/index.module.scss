@@ -3,59 +3,70 @@
 @import "../general-scss/variables/mixin";
 
 .opening {
-    height: 712px;
-    margin-top: 130px;
-    .content {
-        width: 440px;
-        height: 204px;
-        margin: 0 auto;
-        h1 {
-            @include headingBig;
-        }
-        p {
-            text-align: center;
-            font-size: 16px;
-            line-height: 22px;
-            font-family: $font-open-sans;
-            color: $color-black;
-            margin: 20px 0 38px 0;
-        }
-        a {
-            display: inline-block;
-            padding: 22px 156px;
-            border-radius: 40px;
-            font-size: 16px;
-            line-height: 22px;
-        }
+  height: 712px;
+  margin-top: 130px;
+
+  .content {
+    width: 440px;
+    height: 204px;
+    margin: 0 auto;
+
+    h1 {
+      @include headingBig;
     }
-    img {
-        width: 100%;
-        height: 594px;
+
+    p {
+      text-align: center;
+      font-size: 16px;
+      line-height: 22px;
+      font-family: $font-open-sans;
+      color: $color-black;
+      margin: 20px 0 38px 0;
     }
+
+    a {
+      display: inline-block;
+      padding: 22px 156px;
+      border-radius: 40px;
+      font-size: 16px;
+      line-height: 22px;
+    }
+  }
+
+  img {
+    width: 100%;
+    height: 594px;
+  }
 }
+
 @media (max-width: 1100px) {
-    .opening {
-        margin-top: 100px;
-        height: 480px;
-        .content {
-            width: 310px;
-            h1 {
-                font-size: 35px;
-                line-height: 41px;
-            }
-            p{
-                margin-bottom: 28px;
-                padding: 0 20px;
-            }
-            a{
-               padding: 22px 90px;
-            }
-        }
-        img{
-            margin-top: 51px;
-            height: 267px;
-            object-fit: cover;
-            object-position: center top;
-        }
+  .opening {
+    margin-top: 100px;
+    height: 480px;
+
+    .content {
+      width: 310px;
+
+      h1 {
+        font-size: 35px;
+        line-height: 41px;
+      }
+
+      p {
+        margin-bottom: 28px;
+        padding: 0 20px;
+      }
+
+      a {
+        padding: 22px 90px;
+      }
     }
+
+    img {
+      margin-top: 51px;
+      height: 267px;
+      object-fit: cover;
+      object-position: center top;
+    }
+  }
 }

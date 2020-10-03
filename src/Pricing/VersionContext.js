@@ -1,7 +1,8 @@
 import React from "react";
+
 const VersionContext = React.createContext();
 
-const { Provider } = VersionContext;
+const {Provider} = VersionContext;
 
-export { Provider };
+export {Provider};
 export default VersionContext;

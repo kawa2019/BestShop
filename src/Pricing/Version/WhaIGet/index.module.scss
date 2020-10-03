@@ -1,64 +1,75 @@
 @import "../../../general-scss/variables/fonts";
 @import "../../../general-scss/variables/color";
+
 .wrapper {
-    margin: 0 auto;
-    width: 114px;
-    text-align: center;
-    li {
-        display: inline-block;
-        font-size: 14px;
-        line-height: 19px;
-        font-family: $font-open-sans;
-        color: $color-black;
-        margin-bottom: 20px;
-        position: relative;
-        &:before {
-            content: "";
-            position: absolute;
-            display: inline-block;
-            width: 11px;
-            height: 11px;
-            background-image: url("../../../assets/images/check-square-regular.svg");
-            filter: invert(82%) sepia(68%) saturate(392%) hue-rotate(91deg) brightness(92%) contrast(88%);
-            left: -21px;
-            top: 50%;
-            margin-top: -6px;
-        }
+  margin: 0 auto;
+  width: 114px;
+  text-align: center;
+
+  li {
+    display: inline-block;
+    font-size: 14px;
+    line-height: 19px;
+    font-family: $font-open-sans;
+    color: $color-black;
+    margin-bottom: 20px;
+    position: relative;
+
+    &:before {
+      content: "";
+      position: absolute;
+      display: inline-block;
+      width: 11px;
+      height: 11px;
+      background-image: url("../../../assets/images/check-square-regular.svg");
+      filter: invert(82%) sepia(68%) saturate(392%) hue-rotate(91deg) brightness(92%) contrast(88%);
+      left: -21px;
+      top: 50%;
+      margin-top: -6px;
     }
+  }
 }
+
 .basic {
-    margin-top: 69px;
-    li {
-        &:nth-child(n + 4) {
-            &::before {
-                background-image: url("../../../assets/images/window-close-regular.svg");
-                filter: invert(46%) sepia(79%) saturate(3231%) hue-rotate(319deg) brightness(94%) contrast(96%);
-            }
-        }
+  margin-top: 69px;
+
+  li {
+    &:nth-child(n + 4) {
+      &::before {
+        background-image: url("../../../assets/images/window-close-regular.svg");
+        filter: invert(46%) sepia(79%) saturate(3231%) hue-rotate(319deg) brightness(94%) contrast(96%);
+      }
     }
+  }
 }
+
 .professional {
-    margin-top: 67px;
-    li {
-        margin-bottom: 25px;
-        &:last-child {
-            &::before {
-                background-image: url("../../../assets/images/window-close-regular.svg");
-                filter: invert(46%) sepia(79%) saturate(3231%) hue-rotate(319deg) brightness(94%) contrast(96%);
-            }
-        }
+  margin-top: 67px;
+
+  li {
+    margin-bottom: 25px;
+
+    &:last-child {
+      &::before {
+        background-image: url("../../../assets/images/window-close-regular.svg");
+        filter: invert(46%) sepia(79%) saturate(3231%) hue-rotate(319deg) brightness(94%) contrast(96%);
+      }
     }
+  }
 }
+
 .premium {
-    margin-top: 47px;
+  margin-top: 47px;
 }
-@media (max-width: 750px){
-    .wrapper{
-        margin: unset;
-        margin-left: 21px;
-        li{
-            display: block;
-            text-align: left;
-        }
+
+@media (max-width: 750px) {
+  .wrapper {
+    margin: unset;
+    margin-left: 21px;
+
+    li {
+      display: block;
+      text-align: left;
     }
+  }
 }

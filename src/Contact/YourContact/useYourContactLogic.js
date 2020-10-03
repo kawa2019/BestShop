@@ -1,11 +1,11 @@
-import { useState } from 'react';
+import {useState} from 'react';
 
 export const useYourContactLogic = () => {
-    const [controlIputs, setControlInputs] = useState({ name: '', email: "", gdpr: "" })
+    const [controlIputs, setControlInputs] = useState({name: '', email: "", gdpr: ""})
     const handleErrors = (name, error) => {
         setControlInputs(prevState => {
-            const newState = { ...prevState };
-            return { ...newState, [`error_${name}`]: error }
+            const newState = {...prevState};
+            return {...newState, [`error_${name}`]: error}
         })
     }
     const handleForm = (e) => {
@@ -27,7 +27,7 @@ export const useYourContactLogic = () => {
     const handleInputs = (e) => {
         const value =
             e.target.type === "checkbox" ? e.target.checked : e.target.value;
-        setControlInputs({ ...controlIputs, [e.target.name]: value });
+        setControlInputs({...controlIputs, [e.target.name]: value});
     }
-    return { controlIputs, handleForm, handleInputs }
+    return {controlIputs, handleForm, handleInputs}
 }

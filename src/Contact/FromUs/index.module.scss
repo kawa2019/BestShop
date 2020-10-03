@@ -3,69 +3,79 @@
 @import "../../general-scss/variables/color";
 
 .wrapper {
-    width: 343px;
-    h2 {
-        @include headingBig;
-        margin-bottom: 22px;
-    }
-    p {
-        font-family: $font-open-sans;
-        font-size: 16px;
-        line-height: 22px;
-        margin-bottom: 42px;
-        color: $color-black;
-    }
-    ul {
-        li {
-            display: inline-block;
-            padding-left: 37px;
-            font-family: $font-open-sans;
-            font-size: 16px;
-            line-height: 22px;
-            color: $color-grey;
-            font-weight: 600;
-            position: relative;
-            &::before {
-                content: "";
-                position: absolute;
-                width: 27px;
-                height: 27px;
-                left: 0;
-            }
-            &:nth-child(1) {
-                margin-right: 20px;
-                &::before {
-                    background-image: url("../../assets/images/Mail\ Icon.svg");
-                }
-            }
-            &:nth-child(2) {
-                &::before {
-                    background-image: url("../../assets/images/Phone\ Icon.svg");
-                }
-            }
+  width: 343px;
+
+  h2 {
+    @include headingBig;
+    margin-bottom: 22px;
+  }
+
+  p {
+    font-family: $font-open-sans;
+    font-size: 16px;
+    line-height: 22px;
+    margin-bottom: 42px;
+    color: $color-black;
+  }
+
+  ul {
+    li {
+      display: inline-block;
+      padding-left: 37px;
+      font-family: $font-open-sans;
+      font-size: 16px;
+      line-height: 22px;
+      color: $color-grey;
+      font-weight: 600;
+      position: relative;
+
+      &::before {
+        content: "";
+        position: absolute;
+        width: 27px;
+        height: 27px;
+        left: 0;
+      }
+
+      &:nth-child(1) {
+        margin-right: 20px;
+
+        &::before {
+          background-image: url("../../assets/images/Mail\ Icon.svg");
         }
+      }
+
+      &:nth-child(2) {
+        &::before {
+          background-image: url("../../assets/images/Phone\ Icon.svg");
+        }
+      }
     }
+  }
 }
-@media (max-width: 750px){
-    .wrapper{
-            margin-bottom: 5px;
-        ul{
-            li{
-                display: block;
-                &:nth-child(1){
-                    margin-bottom: 17px;
-                }
-            }
+
+@media (max-width: 750px) {
+  .wrapper {
+    margin-bottom: 5px;
+
+    ul {
+      li {
+        display: block;
+
+        &:nth-child(1) {
+          margin-bottom: 17px;
         }
+      }
     }
+  }
 }
 
 @media (max-width: 1100px) {
-    .wrapper {
-        h2 {
-            font-size: 40px;
-            line-height: 47px;
-            text-align: left;
-        }
+  .wrapper {
+    h2 {
+      font-size: 40px;
+      line-height: 47px;
+      text-align: left;
     }
+  }
 }
